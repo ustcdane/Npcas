@@ -1,7 +1,8 @@
-1,»ùÓÚWinPcapµÄ°ü½Ø»ñºÍ·ÖÎöÏµÍ³
-2,ĞèÒª°²×°winpcap°ü£¬WinPcapÖĞÎÄ¼¼ÊõÎÄµµ http://www.ferrisxu.com/WinPcap/html/main.html
-3£¬ÅäÖÃwinpcap±à³Ì»·¾³(VC6.0 »òÕßVS2008) http://blog.csdn.net/zhiyu2008/article/details/5846680
-4,³ÌĞòÊ¹ÓÃµÄÆ¤·ô¿âÎª skin#
+1,åŸºäºWinPcapçš„åŒ…æˆªè·å’Œåˆ†æç³»ç»Ÿ
+2,éœ€è¦å®‰è£…winpcapåŒ…ï¼ŒWinPcapä¸­æ–‡æŠ€æœ¯æ–‡æ¡£ http://www.ferrisxu.com/WinPcap/html/main.html 
+3ï¼Œé…ç½®winpcapç¼–ç¨‹ç¯å¢ƒ(VC6.0 æˆ–è€…VS2008) http://blog.csdn.net/zhiyu2008/article/details/5846680 
+4,ç¨‹åºä½¿ç”¨çš„çš®è‚¤åº“ä¸º skin#
 
+æ›´å¤šè¯¦æƒ…ï¼Œè¯·è§ æŠ€æœ¯æ–‡æ¡£ æˆ–è€… åªä¸ªé¡µé¢ã€‚
 
 
