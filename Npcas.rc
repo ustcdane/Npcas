@@ -1,0 +1,398 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Protocolanalysis.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ProtocolAnalysis_DIALOG DIALOGEX 0, 0, 478, 379
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "网络包截获分析系统"
+MENU IDR_MENU1
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "开始",IDC_BUTTON_START,5,3,38,16,BS_FLAT
+    PUSHBUTTON      "停止",IDC_BUTTON_END,46,3,38,16,BS_FLAT
+    PUSHBUTTON      "保存文件",MENU_SAVE,87,3,38,16,BS_FLAT
+    PUSHBUTTON      "打开文件",IDC_BUTTON_OPEN_DUMP_FILE,128,3,38,16,BS_FLAT
+    PUSHBUTTON      "过滤规则",IDC_BUTTON_SET_FILTER,169,3,38,16,BS_FLAT
+    PUSHBUTTON      "清除列表 ",IDC_BTCLEAR,210,3,38,16,BS_FLAT
+    LTEXT           "截获的包数目:",IDC_STATIC_PACKET_COUNT,263,7,74,8
+    LTEXT           "数据包信息",IDC_STATIC_STATUS,347,7,54,10,
+                    SS_CENTERIMAGE
+    ICON            IDI_ICON_SKIN,IDC_SKIN,419,8,20,20,SS_NOTIFY | WS_GROUP,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,18,95,114,89
+    CONTROL         "List2",IDC_LIST_COM,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,329,93,115,41,
+                    WS_EX_DLGMODALFRAME
+    CONTROL         "List3",IDC_LIST_ARP,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,53,197,88,40
+    CONTROL         "List4",IDC_LIST_IP,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,175,118,71,26
+    CONTROL         "List5",IDC_LIST_TCP,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,327,56,120,25
+    CONTROL         "List6",IDC_LIST_UDP,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,189,155,83,34
+    CONTROL         "List7",IDC_LIST_ICMP,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,193,77,97,32
+    CONTROL         "List4",IDC_LIST_PPPOE,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,297,168,130,
+                    31
+    CONTROL         "Tree1",IDC_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_EDITLABELS | 
+                    WS_BORDER | WS_TABSTOP,4,263,242,110
+    CONTROL         "List1",IDC_LIST_HTTP,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,175,194,95,32
+    CONTROL         "",IDC_RICHEDIT,"RICHEDIT",ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | WS_BORDER | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,252,263,192,108
+    CONTROL         "List2",IDC_LIST_DNS,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,293,214,154,
+                    28
+END
+
+IDD_DIALOG_F1 DIALOG DISCARDABLE  0, 0, 203, 91
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于此软件"
+FONT 10, "宋体"
+BEGIN
+    PUSHBUTTON      "确定",IDOK,129,60,41,16
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,4,20,20
+    LTEXT           "网络包截获分析系统",IDC_STATIC,65,7,89,13
+    LTEXT           "CUMT CS  Daniel Wang",IDC_STATIC,32,22,161,8
+    LTEXT           " \t版权所有 @2012",IDC_ZUOZHE,31,41,130,8
+    LTEXT           "\r\n     了解更多.......",IDC_ABOUT_MY,10,56,88,24
+END
+
+IDD_FILTER_DLG DIALOGEX 0, 0, 254, 242
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置过滤规则"
+FONT 10, "宋体", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST_FILTER,67,17,174,139,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "添 加",IDC_BT_NEW,11,36,34,14
+    PUSHBUTTON      "删 除",IDC_BT_DEL,11,104,34,14
+    EDITTEXT        IDC_EDIT_FILTER_NAME,55,175,190,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FILTER,55,190,189,15,ES_AUTOHSCROLL,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "帮助",IDC_BT_HELP,10,218,33,16
+    DEFPUSHBUTTON   "确定",IDOK,93,218,33,16
+    PUSHBUTTON      "取消",IDCANCEL,177,218,33,16
+    LTEXT           "过滤语句为：",IDC_STATIC,4,194,45,8
+    GROUPBOX        "        常用过滤规则",IDC_STATIC,61,4,185,159
+    GROUPBOX        "  编 辑",IDC_STATIC,6,4,48,157
+    GROUPBOX        "",IDC_STATIC,0,164,252,74
+    LTEXT           "过滤规则名字：",IDC_STATIC,2,180,55,8
+END
+
+IDD_DIALOG_HELP DIALOG DISCARDABLE  0, 0, 272, 155
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "过滤规则帮助"
+FONT 12, "华文新魏"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,157,131,39,14
+    CONTROL         "了解更多规则. . .",IDC_LINK,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,19,132,59,19
+    CONTROL         "",IDC_RICHEDIT_HELP,"RICHEDIT",ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_WANTRETURN | WS_BORDER | WS_VSCROLL | WS_TABSTOP,11,
+                    15,252,107
+    GROUPBOX        "",IDC_STATIC,7,7,262,119
+END
+
+IDD_DIALOG_DEVICE DIALOG DISCARDABLE  0, 0, 230, 115
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择网络接口"
+FONT 10, "仿宋"
+BEGIN
+    GROUPBOX        "                 请选择网络接口",IDC_STATIC,3,4,222,78
+    LISTBOX         IDC_LIST_DEVICE,11,14,215,64,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "确定",IDOK,32,85,37,17
+    PUSHBUTTON      "取消",IDCANCEL,140,85,37,17
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "网络包截获分析系统 \0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "IDS\0"
+            VALUE "LegalCopyright", "作者:王丹\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "IDS.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "网络包截获分析系统 \0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "     文   件   "
+    BEGIN
+        MENUITEM "打开文件",                    ID_MENU_OPEN_DUMP_FILE
+        MENUITEM "保存文件",                    MENU_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "退出系统",                    MENU_EXIT
+    END
+    POPUP " 捕  获  "
+    BEGIN
+        MENUITEM "开始",                        MENU_START
+        MENUITEM "停止",                        MENU_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "重新开始",                    MENU_RESTART
+    END
+    POPUP "系统设置    "
+    BEGIN
+        MENUITEM "设置过滤规则",                MENU_SET_FILETER
+        MENUITEM SEPARATOR
+        MENUITEM "保存文件",                    MENU_IF_SAVE, CHECKED
+    END
+    POPUP " 查 看  "
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "查看首条",                    IDD_menu_First
+        MENUITEM SEPARATOR
+        MENUITEM "查看最后一条",                IDD_menu_Last
+        MENUITEM SEPARATOR
+        MENUITEM "转到中间位置",                IDD_menu_Center
+    END
+    POPUP "  帮 助"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "帮助",                        IDD_menu_Help
+    END
+END
+
+IDR_MENU2 MENU DISCARDABLE 
+BEGIN
+    POPUP "t"
+    BEGIN
+        MENUITEM "显示主面板",                  ID_MENU_SHOW
+        MENUITEM SEPARATOR
+        MENUITEM "退出程序",                    ID_MENU_QUIT
+    END
+END
+
+IDR_MENU3 MENU DISCARDABLE 
+BEGIN
+    POPUP "Rclik"
+    BEGIN
+        MENUITEM "复 制",                       ID_COPY
+    END
+END
+
+IDR_MENU4 MENU DISCARDABLE 
+BEGIN
+    POPUP "shin"
+    BEGIN
+        MENUITEM "蓝色 Royale",                 ID_SKIN_1
+        MENUITEM SEPARATOR
+        MENUITEM "新生 Live2012",               ID_SKIN_2
+        MENUITEM SEPARATOR
+        MENUITEM "经典 Classic",                ID_SKIN_3
+        MENUITEM SEPARATOR
+        MENUITEM "中国红 Red",                  ID_SKIN_4
+        MENUITEM SEPARATOR
+        MENUITEM " 还 原",                      ID_SKIN_RE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Analyzer.ico"
+IDI_ICON_FRAM           ICON    DISCARDABLE     "res\\GOAL!FIFAWorldCup2006086.ico"
+IDI_ICON_H              ICON    DISCARDABLE     "res\\icon.ico"
+IDI_ICON_SUM            ICON    DISCARDABLE     "res\\sum.ico"
+IDI_ICON_TYPE           ICON    DISCARDABLE     "res\\20120418033051355_easyicon_cn_16.ico"
+IDI_ICON_SR_DE          ICON    DISCARDABLE     "res\\sr.ico"
+IDI_ICON_PRO            ICON    DISCARDABLE     "res\\20120418031703240_easyicon_cn_24.ico"
+IDI_ICON_LEN            ICON    DISCARDABLE     "res\\1.ico"
+IDI_ICON_com            ICON    DISCARDABLE     "res\\20120418040922659_easyicon_cn_24.ico"
+IDI_ICON_OPER           ICON    DISCARDABLE     "res\\oper.ico"
+IDI_ICON_TTL            ICON    DISCARDABLE     "res\\20120418041543954_easyicon_cn_24.ico"
+IDI_ICON_TEXT           ICON    DISCARDABLE     "res\\text.ico"
+IDI_ICON_SKIN           ICON    DISCARDABLE     "res\\skin.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_FILTER_DLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 252
+    END
+
+    IDD_DIALOG_HELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 269
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_DIALOG_DEVICE, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 226
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 112
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\my.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "网络包截获分析系统(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Protocolanalysis.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
