@@ -5,7 +5,7 @@
 
 可执行程序在Release 目录下。                                                                                               
 
-更多详情，请见 技术文档 或者 只个页面 http://blog.csdn.net/daniel_ustc/article/details/7522731
+更多详情，请见 技术文档 或者 这个页面 http://blog.csdn.net/daniel_ustc/article/details/7522731
 
 
 
