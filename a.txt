@@ -1,3 +1,0 @@
-23:27:04.717865 IP daniel-OptiPlex-320.local.52424 > 210.45.114.178.1111: Flags [S], seq 3590231077, win 14600, options [mss 1460,sackOK,TS val 702800257 ecr 0,nop,wscale 4], length 0
-23:27:04.718441 IP 210.45.114.178.58680 > daniel-OptiPlex-320.local.1111: Flags [S], seq 3590231077, win 14600, options [mss 1460,sackOK,TS val 702800257 ecr 0,nop,wscale 4], length 0
-23:27:04.718477 IP daniel-OptiPlex-320.local.1111 > 210.45.114.178.58680: Flags [S.], seq 870838278, ack 3590231078, win 14480, options [mss 1460,sackOK,TS val 702800258 ecr 702800257,nop,wscale 4], length 0
